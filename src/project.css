@@ -1,0 +1,222 @@
+.hero {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+}
+
+.project {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px max(25px, 8vw);
+  position: relative;
+}
+.project header {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project header .logo {
+  cursor: pointer;
+}
+.project header .menu-flex {
+  display: flex;
+  flex-direction: row;
+  display: none;
+}
+.project header .menu-flex a {
+  color: rgb(255, 255, 255);
+  margin: 0px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.project #menu {
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 85%;
+  z-index: 0;
+  margin: 30px max(25px, 6vw);
+  position: absolute;
+  background-color: white;
+}
+.project #menu ul {
+  list-style: none;
+  padding: 0;
+}
+.project #menu ul a {
+  margin: max(20px, 3vw);
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(70, 69, 69);
+}
+.project #menu hr {
+  background-color: rgb(172, 171, 171);
+  height: 1px;
+  border: none;
+  width: 100%;
+}
+.project .content {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 25px;
+  max-width: 700px;
+}
+.project .content .box {
+  box-sizing: border-box;
+  margin-top: 220px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px max(20px, 5vw);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+  position: relative;
+}
+.project .content .box .mastercraft-logo {
+  position: absolute;
+  top: -30px;
+}
+.project .content .box h1 {
+  font-size: max(20px, 2vw);
+}
+.project .content .box p {
+  color: #7a7a7a;
+  font-size: 14px;
+}
+.project .content .box .mastercraft-flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project .content .box .bookmark-wrapper {
+  cursor: pointer;
+}
+.project .content .box .bookmark-wrapper p {
+  display: none;
+}
+.project .content .box .active-bookmark p {
+  display: none;
+}
+.project .content .box button {
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: max(14px, 1vw);
+  font-weight: 600;
+  border: none;
+  color: white;
+  background-color: #3cb3ab;
+  cursor: pointer;
+}
+.project .content .box button:hover {
+  background-color: #1d6863;
+}
+.project .content #stat {
+  margin: 0px;
+}
+.project .content #stat p {
+  margin: 0px;
+}
+.project .content #stat hr {
+  width: 100px;
+  height: 1px;
+  border: none;
+  background-color: rgb(192, 188, 188);
+}
+.project .content #stat .line-cont {
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgb(233, 223, 223);
+  height: 10px;
+  border-radius: 10px;
+}
+.project .content #stat .line-cont .line {
+  width: 80%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #3cb3ab;
+}
+.project #about {
+  margin: 0px;
+  text-align: left;
+}
+.project #about .stand-box {
+  margin-top: 20px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.project #about .stand-box .stand-flex h5 {
+  color: #3cb3ab;
+}
+.project #about .stand-box h2 {
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project #about .stand-box h2 span {
+  font-size: 10px;
+  color: grey;
+}
+
+#disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (width > 777px) {
+  .project header .menu-flex {
+    display: flex;
+  }
+  .project header .toggle {
+    display: none;
+  }
+  .project .content .box .mastercraft-flex .bookmark-wrapper {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    width: 160px;
+    background-color: rgb(230, 223, 223);
+  }
+  .project .content .box .mastercraft-flex .bookmark-wrapper p {
+    display: block;
+    margin-left: 10px;
+    font-weight: 700;
+  }
+  .project .content .box .mastercraft-flex .active-bookmark {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    width: 160px;
+    background-color: rgb(230, 223, 223);
+  }
+  .project .content .box .mastercraft-flex .active-bookmark p {
+    display: block;
+    margin-left: 5px;
+    font-weight: 700;
+  }
+  .project .content .box .stat-flex {
+    display: flex;
+  }
+  .project .content .box .stat-flex hr {
+    border-style: solid;
+    margin-top: 40px;
+    transform: rotate(90deg);
+  }
+}/*# sourceMappingURL=project.css.map */

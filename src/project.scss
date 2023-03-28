@@ -1,0 +1,239 @@
+.hero {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+}
+.project {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px max(25px, 8vw);
+  position: relative;
+
+  header {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      cursor: pointer;
+    }
+    .menu-flex {
+      display: flex;
+      flex-direction: row;
+      display: none;
+      a {
+        color: rgb(255, 255, 255);
+        margin: 0px 20px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+  #menu {
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 85%;
+    z-index: 0;
+    margin: 30px max(25px, 6vw);
+    position: absolute;
+    background-color: white;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      a {
+        margin: max(20px, 3vw);
+        text-decoration: none;
+        cursor: pointer;
+        color: rgb(70, 69, 69);
+      }
+    }
+
+    hr {
+      background-color: rgb(172, 171, 171);
+      height: 1px;
+      border: none;
+      width: 100%;
+    }
+  }
+  .content {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 25px;
+    max-width: 700px;
+    .box {
+      box-sizing: border-box;
+      margin-top: 220px;
+      width: 100%;
+      border-radius: 5px;
+      padding: 20px max(20px, 5vw);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background-color: rgb(241, 241, 241);
+      position: relative;
+      .mastercraft-logo {
+        position: absolute;
+        top: -30px;
+      }
+      h1 {
+        font-size: max(20px, 2vw);
+      }
+      p {
+        color: #7a7a7a;
+        font-size: 14px;
+      }
+      .mastercraft-flex {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .bookmark-wrapper {
+        cursor: pointer;
+        p {
+          display: none;
+        }
+      }
+      .active-bookmark {
+        p {
+          display: none;
+        }
+      }
+      button {
+        padding: 15px 40px;
+        border-radius: 30px;
+        font-size: max(14px, 1vw);
+        font-weight: 600;
+        border: none;
+        color: white;
+        background-color: #3cb3ab;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #1d6863;
+      }
+    }
+    #stat {
+      margin: 0px;
+      p {
+        margin: 0px;
+      }
+      hr {
+        width: 100px;
+        height: 1px;
+        border: none;
+        background-color: rgb(192, 188, 188);
+      }
+      .line-cont {
+        margin-top: 20px;
+        width: 100%;
+        background-color: rgb(233, 223, 223);
+        height: 10px;
+        border-radius: 10px;
+        .line {
+          width: 80%;
+          height: 10px;
+          border-radius: 10px;
+          background-color: #3cb3ab;
+        }
+      }
+    }
+  }
+  #about {
+    margin: 0px;
+    text-align: left;
+    .stand-box {
+      margin-top: 20px;
+      border: 1px solid rgb(219, 219, 219);
+      border-radius: 10px;
+      padding: 10px 20px;
+      .stand-flex {
+        h5 {
+          color: #3cb3ab;
+        }
+      }
+      h2 {
+        width: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+          font-size: 10px;
+          color: grey;
+        }
+      }
+    }
+  }
+}
+
+#disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (width > 777px) {
+  .project {
+    header {
+      .menu-flex {
+        display: flex;
+      }
+      .toggle {
+        display: none;
+      }
+    }
+    .content {
+      .box {
+        .mastercraft-flex {
+          .bookmark-wrapper {
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+            width: 160px;
+            background-color: rgb(230, 223, 223);
+            p {
+              display: block;
+              margin-left: 10px;
+              font-weight: 700;
+            }
+          }
+          .active-bookmark {
+            display: flex;
+            align-items: center;
+            border-radius: 30px;
+            width: 160px;
+            background-color: rgb(230, 223, 223);
+
+            p {
+              display: block;
+              margin-left: 5px;
+              font-weight: 700;
+            }
+          }
+        }
+        .stat-flex {
+          display: flex;
+          hr {
+            border-style: solid;
+            margin-top: 40px;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+}

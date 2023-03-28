@@ -1,0 +1,194 @@
+.backbone {
+  box-sizing: border-box;
+  width: 100%;
+  padding: max(20px, 2vw) max(20px, 7vw);
+  display: grid;
+  place-items: center;
+}
+.backbone .card {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 5px;
+  padding: max(20px, 4vw) max(15px, 3vw);
+  background-color: white;
+}
+.backbone .card header {
+  display: flex;
+  justify-content: space-between;
+}
+.backbone .card header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+.backbone .card header .close {
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+}
+.backbone .card p {
+  color: #7a7a7a;
+}
+.backbone .card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.backbone .card .content .box {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  padding: 25px 15px;
+  border: 1px solid rgb(182, 178, 178);
+}
+.backbone .card .content .box .box-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.backbone .card .content .box .box-header label input {
+  width: 30px;
+  height: 30px;
+}
+.backbone .card .content .box .box-header h2 {
+  margin: 0;
+  font-size: 17px;
+  cursor: pointer;
+}
+.backbone .card .content .box .box-header h2:hover {
+  color: #3cb3ab;
+}
+.backbone .card .content .box .box-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #3cb3ab;
+}
+.backbone .card .content .box p {
+  line-height: 25px;
+}
+.backbone .card .content .box .number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.backbone .card .content .box .number h2 {
+  margin: 0;
+}
+.backbone .card .content .box .number span {
+  color: #7a7a7a;
+}
+.backbone .card .content .box .additional-div {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.backbone .card .content .box .additional-div hr {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: rgb(226, 219, 219);
+}
+.backbone .card .content .box .additional-div .input-div {
+  display: flex;
+  gap: 20px;
+}
+.backbone .card .content .box .additional-div .input-div input[type=number]::-webkit-outer-spin-button,
+.backbone .card .content .box .additional-div .input-div input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.backbone .card .content .box .additional-div .input-div input {
+  width: 50%;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid rgb(197, 188, 188);
+  text-align: center;
+  outline: none;
+  background-image: url(https://raw.githubusercontent.com/beqabenidze/Tip-Calculator-app/2901083b6701e31f317d17d90945003c31b207f2/img/icon-dollar.svg);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: 10%;
+  color: rgb(99, 95, 95);
+}
+.backbone .card .content .box .additional-div .input-div input:focus {
+  border-color: #3cb3ab;
+}
+.backbone .card .content .box .additional-div .input-div button {
+  width: 50%;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: max(14px, 1vw);
+  font-weight: 600;
+  border: none;
+  color: white;
+  background-color: #3cb3ab;
+  cursor: pointer;
+}
+.backbone .card .content .box .additional-div .input-div button:hover {
+  background-color: #1d6863;
+}
+
+#disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+@media (width > 777px) {
+  .backbone .card header {
+    position: relative;
+  }
+  .backbone .card header h1 {
+    color: black;
+  }
+  .backbone .card header .close {
+    position: absolute;
+    right: -10px;
+    bottom: 20px;
+  }
+  .backbone .card p {
+    color: #7a7a7a;
+  }
+  .backbone .card .content .box {
+    position: relative;
+  }
+  .backbone .card .content .box .box-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .backbone .card .content .box .box-header .topic-flex {
+    display: flex;
+    gap: 20px;
+  }
+  .backbone .card .content .box .number {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .backbone .card .content .box .number span {
+    color: #7a7a7a;
+  }
+  .backbone .card .content .box .additional-div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .backbone .card .content .box .additional-div hr {
+    top: 120px;
+  }
+  .backbone .card .content .box .additional-div .input-div {
+    justify-content: flex-end;
+  }
+  .backbone .card .content .box .additional-div .input-div input {
+    width: 30%;
+  }
+  .backbone .card .content .box .additional-div .input-div button {
+    width: 30%;
+  }
+}/*# sourceMappingURL=select.css.map */
